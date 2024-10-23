@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body background color changes</title>
+</head>
+<body class="color">
+    <h1>Learning how to implement background color changes</h1>
+    <div>
+        <button class="button" id="gray">Gray</button>
+        <button class="button" id="green">Green</button>
+        <button class="button" id="red">Red</button>
+    </div>
+        <script>
+    const buttons = document.querySelectorAll('.button');
+    const body = document.querySelector('.color');
+
+   buttons.forEach(function(button){
+    button.addEventListener('click', function(e){
+        if(e.target.id=== 'gray'){
+              body.style.backgroundColor= 'gray';
+        }
+        else if(e.target.id==='green'){
+            body.style.backgroundColor=e.target.id
+        }
+        else if(e.target.id==='red'){
+            body.style.backgroundColor=e.target.id
+        }
+    })
+   })
+</script>
+</body>
+</html>

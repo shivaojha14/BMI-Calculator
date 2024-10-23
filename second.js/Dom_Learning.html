@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom - Learning</title>
+    <style>
+     #head{
+        background-color: aquamarine;
+        color: rgb(241, 55, 55);
+        text-align: center;
+        border-radius: 15px;
+     }
+      
+     .title{
+        color: white;
+     }
+     .bg-black{
+        background-color: rgb(29, 28, 28);
+     }
+    </style>
+</head>
+<body class="bg-black">
+    <h1 id="head">seven days name </h1>
+    <div class="parent">
+       <div class="title">monday</div>
+       <div class="title">tuesday</div>
+       <div class="title">wednesday</div>
+       <div class="title">thursday</div>
+       <div class="title">friday</div>
+       <div class="title">saturday</div>
+       <div class="title">sunday</div>
+    </div>
+
+   
+</body>
+<script>
+    const parent=document.querySelector('.parent')
+     console.log(parent);
+     console.log(parent.children);
+     console.log(parent.children[2].innerHTML);
+
+     for (let i = 0; i<parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML)
+        
+     }
+
+     parent.children[2].style.color='green'
+     console.log(parent.firstElementChild);
+     const title=document.querySelector('.title')
+     console.log(title);
+     console.log(title.nextElementSibling);
+     console.log(title.parentElement);
+     console.log('Nodes',parent.childNodes);
+     
+
+</script>
+</html>

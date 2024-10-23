@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show All Users</title>
+</head>
+<body>
+
+  <button id="showUsersBtn">Show All Users</button>
+  <div id="usersContainer"></div>
+
+  <script>
+    const user = {
+      userName: 'shiva ojha',
+      userPassword: 'S@hiva123ojha',
+      userLogin: 'Welcome you are successfully logged in',
+    };
+
+    const userTwo = {
+      userName: 'shiva',
+      userPassword: 'S@hivam123',
+      userEmail: 'shivam@google.com',
+      userLoggedIn: 'user successfully logged in',
+    };
+
+    const allUsers = [user, userTwo]; // Combining objects into an array
+
+    // Button functionality
+    document.getElementById('showUsersBtn').addEventListener('click', function() {
+      const usersContainer = document.getElementById('usersContainer');
+      
+      // Clear previous content
+      usersContainer.innerHTML = '';
+
+      // Display all users
+      allUsers.forEach(userObj => {
+        const userInfo = `
+          <p><strong>Username:</strong> ${userObj.userName}</p>
+          <p><strong>Password:</strong> ${userObj.userPassword}</p>
+          ${userObj.userEmail ? `<p><strong>Email:</strong> ${userObj.userEmail}</p>` : ''}
+          ${userObj.userLogin ? `<p><strong>Login Message:</strong> ${userObj.userLogin}</p>` : ''}
+          ${userObj.userLoggedIn ? `<p><strong>Login Status:</strong> ${userObj.userLoggedIn}</p>` : ''}
+          <hr>
+        `;
+        usersContainer.innerHTML += userInfo;
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM using addEventListener</title>
+
+    <style>
+        #gray {
+            background-color: gray;
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+            color: white;
+            border-radius: 100px;
+        }
+        #black {
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+            color: white;
+            border-radius: 100px;
+        }
+
+        #red {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+            color: white;
+            border-radius: 100px;
+        }
+
+        #pink {
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+            color: white;
+            border-radius: 100px;
+        }
+
+        #green {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+            color: white;
+            border-radius: 100px;
+        }
+        .center{
+          text-align: center;
+          margin-top: 250px;
+          justify-content: center;
+          color: white;
+          border-radius: 100px;
+          
+        }
+        .head{
+          background-color: blue;
+          color: aqua;
+          text-align: center;
+          border-radius: 15px;
+          border-radius: 100px;
+        }
+    </style>
+</head>
+<body id="color">
+    <h1 class="head">Learning addEventListener</h1>
+    <div class="center">
+        <button class="button" id="gray">gray</button>
+        <button class="button" id="black">black</button>
+        <button class="button" id="red">red</button>
+        <button class="button" id="pink">pink</button>
+        <button class="button" id="green">green</button>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        const body = document.querySelector('#color');
+       
+
+        buttons.forEach(function(button) {
+         button.addEventListener('click', function(e) {
+              //  body.style.backgroundColor = e.target.id;
+              if (e.target.id==='gray') {
+            body.style.backgroundColor=e.target.id
+              }
+
+              if (e.target.id==='black') {
+                body.style.backgroundColor=e.target.id
+              }
+        
+              if (e.target.id==='red') {
+                body.style.backgroundColor=e.target.id
+              }
+
+              if (e.target.id==='pink') {
+                body.style.backgroundColor=e.target.id
+              }
+
+              if (e.target.id==='green') {
+                body.style.backgroundColor=e.target.id
+              }
+
+            });
+        });
+    </script>
+</body>
+</html>

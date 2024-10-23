@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+       .center{
+        text-align: center;
+        margin-top: 250px;
+
+       }
+       #clock{
+        color: rgb(36, 233, 14);
+        background-color: rgba(245, 218, 143, 0.199);
+        height: 25px;
+        margin-left: 300px;
+        margin-right: 300px;
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body style="background-color: rgb(78, 77, 75);">
+    <div class="center">
+        <p id="time"> <span><h1 style="background-color: rgb(196, 7, 196);border-radius: 15px;">
+            Your Time Is </h1></span> </p>
+       <div id="clock"></div>
+    </div>
+</body>
+   <script>
+    const clock=document.querySelector('#clock')
+    setInterval(function () {
+        let date=new Date();
+      clock.innerHTML= date.toLocaleTimeString();
+    },1000);
+
+   </script>
+</html>

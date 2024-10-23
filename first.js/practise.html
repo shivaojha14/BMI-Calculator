@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button class="buttom"onclick="cartQuantity=cartQuantity+1;document.querySelector('#cart-summary')
+       .innerText=`your bag have ${cartQuantity} items`;
+             ">Add to bag</button>
+
+    <buttom class="buttom2"onclick="cartQuantity=cartQuantity-1;document.querySelector('#cart-summary')
+    .innerText=`your bag have ${cartQuantity} items`;
+     ">moov to wishlist</buttom>
+
+    <button class="buttom3"onclick="cartQuantity=cartQuantity+2;document.querySelector('#cart-summary')
+    .innerText=`your bag have ${cartQuantity} items`;
+">Add 1to1 sell iteams </button>
+    <h1 id="cart-summary"> </h1>
+    <script src="index.js">
+    
+    </script>
+
+</body>
+</html>

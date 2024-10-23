@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form with Password Validation</title>
+    <link rel="stylesheet" href="basicform.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+    <script>
+        const form = document.querySelector('#contactForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevents the form from submitting
+
+            // Get form values
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+
+            // Validate name (example check)
+            if (name === '' || !isNaN(name)) {
+                alert(`Please enter a valid name.`);
+                return; // Stops form submission if validation fails
+            }
+
+            // Validate email (you can add more checks here if needed)
+            if (email === '') {
+                alert(`Please enter a valid email.`);
+                return;
+            }
+
+            // Validate password (example: checking if it matches 456789)
+            const correctPassword = '456789'; // Example password to match
+            if (password !== correctPassword) {
+                alert('Incorrect password. Please try again.');
+                return; // Stops form submission if password is incorrect
+            }
+
+            // If everything is correct, show a success message
+            alert('Form submitted successfully!');
+
+            // Optionally, you can reset the form here if needed
+            form.reset();
+        });
+    </script>
+
+</html>

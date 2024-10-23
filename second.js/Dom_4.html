@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>language name </title>
+</head>
+<body>
+      <h1>here is learning dom manipulation on the text</h1>
+      <ul class="language">
+                            <li>JavaScript</li>
+      </ul>
+</body>
+  <script>
+       function addLanguage(languageName) {
+        const li= document.createElement('li')
+        li.appendChild(document.createTextNode(languageName));
+        document.querySelector('.language').appendChild(li)
+        
+       }
+       addLanguage('java')
+       addLanguage('python')
+       addLanguage('ruby')
+       
+       const changeLi=document.querySelector('li:nth-child(3)')
+       const liChange=document.createElement('li')
+        liChange.textContent='javascript'
+        changeLi.replaceWith(liChange)
+
+        const secondChangeLi= document.querySelector('li:nth-child(3)')
+        const secondLiChange=document.createElement('li')
+        secondLiChange.textContent='python'
+        secondChangeLi.replaceWith(secondLiChange)
+        
+  </script>
+</html>

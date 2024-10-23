@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice on the Exmaple of SetTimeOut</title>
+      <style>
+                .center{
+                    text-align: center;
+                    margin: 125px;
+                    background-color: rgb(179, 246, 224);
+                    color: black;
+                    border-radius: 25px;
+                }
+                #stop{
+                    color: blue;
+                    background-color: aqua;
+                    
+                }
+      </style>
+</head>
+<body style="background-color: rgb(48, 47, 47);">
+    <div class="center">
+      <h1>best Practice on the setTimeOut </h1>
+      <button id="stop"> stop </button>
+    </div>
+    
+
+</body>
+      <script>
+
+        const  chagText= function(){
+            document.querySelector('h1').innerHTML='best practice on the setTimeOut by the shiva ojha '
+          //  console.log(chagText);
+        
+        }
+         const changeMe=setTimeout( chagText, 3000);
+          document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log('STOPED');
+            
+          })
+        
+      </script>
+</html>

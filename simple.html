@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+<p>This is a <span style="color: red;">highlighted</span> word in a paragraph.</p>
+<div>
+  <h1>Heading</h1>
+  <p>Some text inside the div block.</p>
+</div>
+
+<button style="color: red;border: 3px;"><b>clik me </b></button>
+<script>
+/*function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo").innerHTML = result;*/
+   /* let age=null;
+    console.log(age);
+  if(age){
+  console.log('you are a boy');
+  }else{
+  console.log('you are a child');
+  }*/
+ /* let age=18;
+  let result;
+  if(age>=18){
+    result='you are aligibal for voting';
+
+  }
+  else{
+    result='you are not aligibale for voting';
+  }
+  console.log(result);*/
+   /* ternary operator */
+    
+   /*let age=18;
+   let result=age>=18?'adult':'kid';
+   console.log(result);*/
+   /*let age=18;
+   let result=age>=18?'you are aligibale for voting':'sorry you are not aligibale voting';
+     console.log(result);*/
+
+     /* Guard operator */
+
+    /* let age=44;
+     let finlAge=age||17;
+     console.log(finlAge);
+     console.log(age);*/
+
+/*practice EXERSICE*/ 
+    /* let age=45;
+     let gender='female';
+     let finalDiscount;
+     if(age<=5){
+      finalDiscount=100;
+     }
+     else if(gender==='female'){
+            finalDiscount=50;
+     } else if (age<=8) {
+      finalDiscount=50;
+      
+     }
+     else if (age>=65) {
+      finalDiscount=30;
+     }else{
+      finalDiscount=0;
+     }console.log(`your final discount ${finalDiscount}`);
+*/ 
+  /*   here is starting a function */
+/* practice exersice of function */
+
+/*function isOdd(number){
+    let rem=number%2
+    let isOdd= rem==1
+    return isOdd;
+}
+console.log(isOdd(2));
+
+
+console.log(isOdd(3));
+
+
+console.log(isOdd(4));
+
+
+console.log(isOdd(8));
+
+
+console.log(isOdd(9));*/ 
+
+ /* let age =18;
+
+  let result=age>18?'you are aligibale for voting':'not aligiblale for voting';
+  console.log(result);*/
+
+  /*  here is start to object in javascript */
+
+     /* let product={
+        company:'jockey',
+        price:'1000',
+        items:'undebear',
+      }
+
+      console.log(product);*/
+
+      /*let aboutTeacher={
+        teacher:'shiva',
+        age:44,
+        degree:'bca',
+        curentWork:'Ramdev collage',
+      }
+      console.log(aboutTeacher);
+      console.log(typeof aboutTeacher);
+      console.log(aboutTeacher.degree);*/
+
+      /*let mymother={
+        name:'Nilam devi',
+        age:35,
+        education:'12 pass',
+        
+      }
+      console.log(mymother);
+       console.log(mymother['name']);
+       delete mymother.name;
+       console.log(mymother);*/
+
+      /* let a=1;
+       
+       {
+        let a=3;
+        let b=4;
+       }
+        console.log(a, b);*/
+
+       // console.log(3+4+'5');
+      /* let shiva={
+        name:'shiva ojha',
+        age:21,
+        education:'bca',
+       }
+       console.log(shiva.name);*/
+         
+       /* here is starting JSON*/
+       /* let product={
+          name:'t-shirt',
+          price:1000,
+          rating:{
+             stars:4.5,
+             numberOfReview:459,
+          },
+        };
+        //console.log(typeof product);
+        console.log(product);
+        let str =JSON.stringify(product)
+        console.log(typeof str);
+        console.log(str);
+        //let newProduct=JSON.parse(str);
+        //console.log(typeof newProduct);
+        //console.log(newProduct)
+
+        /* here is starting localstorage */
+
+      // localStorage.setItem('name','shiva');
+       //localStorage.setItem('name','pritam');
+       // console.log(localStorage.getItem('name'));
+    // console.log(localStorage.getItem('name'));
+       /*let product={
+          name:'t-shirt',
+          price:1000,
+          rating:{
+             stars:4.5,
+             numberOfReview:459,
+          },
+        };*/ 
+     //let newProduct=   localStorage.setItem('newProduct','product');
+        // localStorage.clear();
+
+         /*
+             here is startin date mathod */
+
+            /* let mayDate=new Date();
+             console.log(mayDate);
+             console.log(mayDate.getDay());
+             console.log(mayDate.getFullYear());
+             console.log(mayDate.getMinutes());
+             console.log(mayDate.getFullYear());*/
+
+             /* here is starting Array */
+             /*  let obj={sss:1233};
+             let array=[1,2,3,4,5,6,7,8,9,];
+             console.log(array);
+             console.log(typeof array);
+             console.log(array[3]);
+             console.log(array[6]);
+             console.log(array.length);
+             array.splice(1,2);
+             console.log(array);
+             console.log(Array.isArray(array));
+             console.log(Array.isArray(obj));*/
+            /* let arr=[1,2,3,4];
+             console.log(arr);
+             arr.push(6);
+             console.log(arr);
+             arr.pop()
+             console.log(arr);
+             console.log('popped'+ arr.pop());
+             console.log(arr)*/ 
+             /*let arr=[1,2,3,4];
+             console.log(arr.toString
+              ());*/
+             /* let arr=[4,3,2,5,6];
+              console.log(arr)
+               arr.sort();
+               console.log(arr);*/
+               /* here is starting loop */
+
+               /*let num=1;
+               while(num<=10){
+                console.log(num);
+                num=num+1;
+               }*/ 
+
+              /* let shiva={
+                name:'shiva ojha',
+                cource:'B.C.A',
+                belongsto:'ojhapur',
+                ranking:{
+                 rank :'first',
+                 collage:'R.D.P.G',
+                 affliatedto:'M.G,K,V.P',
+                },
+               };
+               console.log(shiva);
+              // console.log(typeof shiva);
+              // console.log(shiva.ranking);
+              /*let str=JSON.stringify(shiva);
+              console.log(str);
+              let newobj=JSON.parse(str);
+              console.log(newobj);
+              localStorage.clear();*/ 
+
+             /*let product={
+                name:'shirt',
+                brand:'levice',
+                price:208,
+                color:'black',
+                rating:{
+                 stars:'4.5',
+                 productLavel:'very good',
+                },
+              };
+              console.log(product);
+              console.log(typeof product);
+              let str=('product',JSON.stringify(product));
+              console.log(str);
+              let str2=(JSON.parse(str));
+              console.log(str2);
+              localStorage.setItem('product',JSON.stringify(product));
+              console.log(localStorage.getItem('product'));
+              str2 =JSON.parse(localStorage.getItem(str2));
+              console.log(str2);
+              localStorage.clear();
+*/ 
+           /*let arr=['shiva','ojha','ojhapur','bca',];
+           console.log(arr);
+           console.log(typeof arr);
+           console.log(arr.length);
+           arr.push(arr,'rdpg');*/ 
+
+              /*let arr=[1,2,3,4];
+              console.log(arr);
+              arr.push(5);
+              console.log(arr);
+              arr.pop();
+              console.log(arr);
+              console.log('poped',arr.pop());
+              arr.unshift(0);
+              console.log(arr);
+              arr.shift();
+              console.log(arr);
+              console.log('shift',arr.shift());
+              let arr2=[5,6,1,4,2,3];
+              console.log(arr2);
+              arr2.sort();
+              console.log(arr2);*/ 
+
+              /*let multiply=function(num1,num2){
+                return num1*num2;
+              }
+              /*console.log(multiply(4,5));
+              console.log(typeof multiply);*/ 
+             /* let multiplyOfThreeNumber=function(num1,num2,num3,multiplyOfTwoNumber){
+                let multiply2=multiplyOfTwoNumber(num1,num2);
+                return multiplyOfTwoNumber(multiply2,num3);
+              }
+              console.log(multiplyOfThreeNumber(4,5,2,multiply));*/
+            /*  var x=3;{
+                var x=4;
+              }
+              console.log(x);*/ 
+              /*let square=(num)=>num*num
+              console.log(square(8));*/ 
+        /*  let x=2;
+          function fun(){
+            console.log(x);
+            const r=5;
+            console.log(r);
+          }
+          fun();*/ 
+         /* for(var i=0;i<5 ,i++;){
+            console.log(i);
+          }*/ 
+         // console.log(1==true);
+        /* let arr=[1,5,6,9,8,9,4];
+         console.log(arr);
+         arr.sort();
+         console.log(arr);*/
+       //  console.log (true===true);
+
+        /* setTimeout(()=>{
+console.log("hello")
+},1000)
+console.log("1")*/ 
+/*let a = 5;
+let b = 10;
+console.log('Me first');
+
+setTimeout(() => {
+  console.log('print after 1ms', a,b);
+},3000);
+
+console.log("Multiply =", a*b);*/ 
+/*let a =5;
+let b=10;
+setTimeout( ()=>{
+  console.log("after 3ms ",a,b);
+
+},5000)
+console.log("final resulst",a*b);
+         
+        /*let person={
+          name: "shiva",
+          age: 22,
+        }
+        console.log("person",person);*/
+        
+       /*setTimeout( ()=>{
+        for (let i=0; i < 10; i++) 
+        { 
+           console.log(10-i);
+        }
+
+       },3000)
+       console.log("hii");*/ 
+       /*let x='0';
+       console.log(typeof x);
+
+*/ 
+   
+/*let numbers = [10, 20, 30];
+let result = numbers.map((num, index) => `Index ${index}: ${num}`);
+console.log("result",result);
+// Output: ["Index 0: 10", "Index 1: 20", "Index 2: 30"]*/
+//question
+
+// sapose we have an array and i want to mumtiply the numberof using map mathod 
+
+/*let x=[22,23,33];
+setTimeout(()=>{
+  let y=x.map(x=>x*3);
+  console.log("",y);
+  let onePerson={
+    name:"shiva",
+    age:22,
+    passion:"student",
+  }
+  console.log(onePerson);
+  
+},3000)
+console.log("multiply the number of array...")*/ 
+/*let x="";
+console.log(x);*/
+/*
+let shiva= {
+  name:"shiva",
+  age: 22,
+}
+console.log("shiav",shiva);
+let str=JSON.stringify(shiva);
+console.log("str",str)
+let str2=(JSON.parse(str));
+console.log(str2);
+console.log(true==true);
+let x=10
+let y=20;
+let z=25;
+x=y=z;
+//console.table([x,y,z]);
+   */ 
+   
+
+    </script>
+</body>
+</html>
+    

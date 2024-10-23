@@ -1,0 +1,22 @@
+.buttom{
+    color: rgb(241, 94, 9);
+    background-color: aqua;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.buttom2{
+    border: solid 2px;
+    padding: 5px 10px;
+    border-radius: 8px; 
+    text-transform: uppercase;
+
+}
+.buttom3{
+    background-color: aquamarine;
+    color: blue;
+    border:none;
+    border-radius: 12px;
+    padding: 5px 15px;
+    
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Click the button to see the result:</p>
+    <button onclick="
+    
+   
+    
+    
+    
+    ">Click me</button>
+
+    <script>
+        // example of shadowing 
+      
+      let x = 10;  // outer (global) scope
+
+function outerFunction() {
+    let x = 20;  // middle scope
+    console.log("Inside outer function:", x);  // use console.log in JavaScript
+
+    function innerFunction() {
+        let x = 30;  // inner scope
+        console.log("Inside inner function:", x);
+    }
+
+    innerFunction();{
+    console.log("Back in outer function:", x);
+    }
+}
+
+outerFunction();
+console.log("In global scope:", x);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            background-color: rgb(62, 62, 63);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p><label>Enter Height (cm)</label> <input type="text" id="height"></p>
+            <p><label>Enter Weight (kg)</label> <input type="text" id="weight"></p>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get height and weight values
+            const height = parseFloat(document.querySelector('#height').value);
+            const weight = parseFloat(document.querySelector('#weight').value);
+            const results = document.querySelector('#results');
+
+            // Validate height and weight inputs
+            if (isNaN(height) || height <= 0) {
+                results.innerHTML = `Please enter a valid height.`;
+            } else if (isNaN(weight) || weight <= 0) {
+                results.innerHTML = `Please enter a valid weight.`;
+            } else {
+                // Calculate BMI
+                const bmi = (weight / (height * height) * 10000).toFixed(2);
+                results.innerHTML = `Your BMI is: <strong>${bmi}</strong>.`;
+            }
+        });
+    </script>
+</body>
+</html>
